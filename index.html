@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Agreement ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+
+    min-height: 100vh;
+
+    padding: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255, 197, 215, 0.55),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 88% 85%,
+            rgba(255, 218, 228, 0.7),
+            transparent 30%
+        ),
+        #fff4f7;
+
+    color: #3c2930;
+
+    font-family: "Cormorant Garamond", serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   PAPER
+========================= */
+
+.paper {
+
+    position: relative;
+
+    width: min(100%, 430px);
+
+    max-height: calc(100vh - 36px);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffafb,
+            #fff7f9
+        );
+
+    border: 1px solid #efcbd6;
+
+    border-radius: 22px;
+
+    padding: 31px 27px 27px;
+
+    box-shadow:
+        0 18px 45px rgba(188, 103, 127, 0.13),
+        0 3px 10px rgba(188, 103, 127, 0.07);
+
+    animation: appear 0.7s ease;
+}
+
+.paper::-webkit-scrollbar {
+    width: 3px;
+}
+
+.paper::-webkit-scrollbar-thumb {
+    background: #efc6d3;
+    border-radius: 10px;
+}
+
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.985);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================
+   DECORATIVE EMOJIS
+========================= */
+
+.corner {
+
+    position: absolute;
+
+    font-size: 20px;
+
+    pointer-events: none;
+
+    opacity: 0.75;
+}
+
+.corner.one {
+    top: 16px;
+    left: 18px;
+}
+
+.corner.two {
+    top: 18px;
+    right: 19px;
+}
+
+.corner.three {
+    bottom: 16px;
+    left: 18px;
+}
+
+.corner.four {
+    bottom: 17px;
+    right: 19px;
+}
+
+
+/* =========================
+   OPENING
+========================= */
+
+.opening {
+
+    position: relative;
+
+    text-align: center;
+
+    margin: 5px 10px 27px;
+
+    padding: 0 5px;
+}
+
+.opening::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: -3px;
+    bottom: -17px;
+
+    color: #e7a5b9;
+
+    font-size: 12px;
+}
+
+
+.opening p {
+
+    margin: 3px 0;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+    color: #53353f;
+}
+
+.opening p:first-child {
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.small-label {
+
+    text-align: center;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 1.7px;
+
+    color: #bd8497;
+
+    margin-bottom: 7px;
+}
+
+
+.title {
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 31px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #4b3039;
+}
+
+
+.names {
+
+    margin-top: 8px;
+
+    text-align: center;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 1.4px;
+
+    color: #bb8295;
+}
+
+
+/* little decorative line */
+
+.line {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #efccd6;
+
+    margin: 25px 0;
+}
+
+.line::after {
+
+    content: "♡";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: #fff9fa;
+
+    padding: 0 8px;
+
+    color: #dc91a9;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+
+    position: relative;
+
+    margin-bottom: 23px;
+
+    padding-left: 2px;
+}
+
+
+.number {
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #cf91a4;
+
+    margin-bottom: 3px;
+}
+
+
+.section-title {
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #4d303a;
+
+    margin-bottom: 5px;
+}
+
+
+.section-text {
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    color: #60434c;
+}
+
+
+/* =========================
+   IMPORTANT PART
+========================= */
+
+.section:last-of-type {
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   QUESTION
+========================= */
+
+.question {
+
+    text-align: center;
+
+    margin-top: 27px;
+}
+
+
+.question-text {
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    color: #4d303a;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button-area {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 49px;
+}
+
+
+button {
+
+    border: 1px solid #c78399;
+
+    border-radius: 999px;
+
+    background: #fff8fa;
+
+    color: #6b3e4d;
+
+    padding: 11px 22px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 1.1px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 8px rgba(188, 103, 127, 0.08);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#yesBtn:hover {
+
+    background: #eaa9bc;
+
+    color: white;
+
+    border-color: #eaa9bc;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 13px rgba(188, 103, 127, 0.18);
+}
+
+
+/* =========================
+   NO BUTTON
+========================= */
+
+#noBtn {
+
+    position: relative;
+
+    z-index: 5;
+
+    transition:
+        left 0.18s ease,
+        top 0.18s ease,
+        transform 0.18s ease;
+}
+
+
+/* =========================
+   NO MESSAGE
+========================= */
+
+#noMessage {
+
+    height: 20px;
+
+    margin-top: 7px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 0.5px;
+
+    color: #b2768a;
+
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+.success {
+
+    display: none;
+
+    text-align: center;
+
+    animation: appear 0.55s ease;
+}
+
+
+.success-title {
+
+    font-size: 29px;
+
+    font-weight: 600;
+
+    color: #4d303a;
+
+    margin-bottom: 8px;
+}
+
+
+.success-text {
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    color: #70515b;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.small-footer {
+
+    margin-top: 27px;
+
+    text-align: center;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #c79aaa;
+}
+
+
+/* =========================
+   FLOATING DECORATIONS
+========================= */
+
+.tiny-symbol {
+
+    position: absolute;
+
+    pointer-events: none;
+
+    font-size: 14px;
+
+    opacity: 0;
+
+    animation: tinyFloat 1.4s ease forwards;
+}
+
+
+@keyframes tinyFloat {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(5px)
+            scale(0.7)
+            rotate(-5deg);
+    }
+
+    25% {
+
+        opacity: 0.85;
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-25px)
+            scale(1)
+            rotate(8deg);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .paper {
+
+        max-height: calc(100vh - 24px);
+
+        padding:
+            27px
+            21px
+            24px;
+
+        border-radius: 19px;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
+    .opening p {
+        font-size: 17px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="paper" id="paper">
+
+    <!-- CORNER DECORATIONS -->
+
+    <div class="corner one">🎀</div>
+    <div class="corner two">✦</div>
+    <div class="corner three">♡</div>
+    <div class="corner four">🌷</div>
+
+
+    <!-- OPENING -->
+
+    <div class="opening">
+
+        <p>
+            This document was intended to be objective.
+        </p>
+
+        <p>
+            Unfortunately, the author likes you.
+        </p>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <div class="small-label">
+        A LITTLE AGREEMENT ✦
+    </div>
+
+    <h1 class="title">
+        DATE AGREEMENT
+    </h1>
+
+    <div class="names">
+        LYRIS &nbsp; × &nbsp; ALEXIS
+    </div>
+
+
+    <div class="line"></div>
+
+
+    <!-- 01 -->
+
+    <div class="section">
+
+        <div class="number">
+            01
+        </div>
+
+        <div class="section-title">
+            The Proposal
+        </div>
+
+        <div class="section-text">
+            I would like to go on a date with you.
+        </div>
+
+    </div>
+
+
+    <!-- 02 -->
+
+    <div class="section">
+
+        <div class="number">
+            02
+        </div>
+
+        <div class="section-title">
+            The Plan
+        </div>
+
+        <div class="section-text">
+
+            We talk.<br>
+
+            We laugh.<br>
+
+            We spend good time together.
+
+        </div>
+
+    </div>
+
+
+    <!-- 03 -->
+
+    <div class="section">
+
+        <div class="number">
+            03
+        </div>
+
+        <div class="section-title">
+            One Small Request
+        </div>
+
+        <div class="section-text">
+            Please show up.
+        </div>
+
+        <div class="tiny-note">
+            I have already decided what I’m wearing. 🎀
+        </div>
+
+    </div>
+
+
+    <!-- 04 -->
+
+    <div class="section">
+
+        <div class="number">
+            04
+        </div>
+
+        <div class="section-title">
+            The Important Part
+        </div>
+
+        <div class="section-text">
+            Let’s have a lovely time ;)
+        </div>
+
+    </div>
+
+
+    <div class="line"></div>
+
+
+    <!-- QUESTION -->
+
+    <div class="question" id="question">
+
+        <div class="question-text">
+            Do we have an agreement?
+        </div>
+
+
+        <div class="button-area" id="buttonArea">
+
+            <button
+                id="yesBtn"
+                onclick="sayYes()"
+            >
+                YES ♡
+            </button>
+
+
+            <button
+                id="noBtn"
+                onclick="sayNo()"
+            >
+                NO
+            </button>
+
+        </div>
+
+
+        <div id="noMessage"></div>
+
+    </div>
+
+
+    <!-- SUCCESS -->
+
+    <div class="success" id="success">
+
+        <div class="success-title">
+            Good. 🎀
+        </div>
+
+        <div class="success-text">
+            Then I’ll see you Friday, Alexis. ♡
+        </div>
+
+    </div>
+
+
+    <div class="small-footer">
+        drafted with questionable objectivity ✦
+    </div>
+
+</div>
+
+
+<script>
+
+
+/* =========================
+   NO BUTTON
+========================= */
+
+const noBtn =
+    document.getElementById("noBtn");
+
+const noMessage =
+    document.getElementById("noMessage");
+
+let noCount = 0;
+
+
+function sayNo() {
+
+    noCount++;
+
+
+    const messages = [
+
+        "Nice try. :)",
+
+        "Really? 🤨",
+
+        "Hmm... 🤔",
+
+        "You’re still trying? 🙃",
+
+        "NOPE. 🎀"
+
+    ];
+
+
+    noMessage.innerText =
+        messages[
+            Math.min(
+                noCount - 1,
+                messages.length - 1
+            )
+        ];
+
+
+    noMessage.style.opacity = "1";
+
+
+    /*
+        Very small movements.
+        The button stays close to its
+        original position at all times.
+    */
+
+    const movements = [
+
+        {
+            x: 13,
+            y: -2,
+            r: -2
+        },
+
+        {
+            x: -15,
+            y: 3,
+            r: 2
+        },
+
+        {
+            x: 10,
+            y: 5,
+            r: -3
+        },
+
+        {
+            x: -12,
+            y: -4,
+            r: 2
+        },
+
+        {
+            x: 4,
+            y: 2,
+            r: -1
+        }
+
+    ];
+
+
+    const move =
+        movements[
+            (noCount - 1)
+            % movements.length
+        ];
+
+
+    noBtn.style.left =
+        move.x + "px";
+
+    noBtn.style.top =
+        move.y + "px";
+
+    noBtn.style.transform =
+        `rotate(${move.r}deg)`;
+
+
+    /*
+        Tiny wobble after repeated attempts.
+    */
+
+    if (noCount >= 4) {
+
+        noBtn.animate(
+
+            [
+
+                {
+                    transform:
+                        "translateX(0) rotate(-1deg)"
+                },
+
+                {
+                    transform:
+                        "translateX(-3px) rotate(2deg)"
+                },
+
+                {
+                    transform:
+                        "translateX(3px) rotate(-2deg)"
+                },
+
+                {
+                    transform:
+                        "translateX(0) rotate(0deg)"
+                }
+
+            ],
+
+            {
+                duration: 420,
+                easing: "ease-in-out"
+            }
+
+        );
+    }
+
+}
+
+
+/* =========================
+   YES
+========================= */
+
+function sayYes() {
+
+    document
+        .getElementById("question")
+        .style.display = "none";
+
+
+    document
+        .getElementById("success")
+        .style.display = "block";
+
+
+    createTinySymbols();
+
+}
+
+
+/* =========================
+   TINY CELEBRATION
+========================= */
+
+function createTinySymbols() {
+
+    const paper =
+        document.getElementById("paper");
+
+
+    const symbols = [
+
+        "♡",
+        "✦",
+        "✧",
+        "🎀",
+        "·",
+        "🌷"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 10;
+        i++
+    ) {
+
+        setTimeout(() => {
+
+            const symbol =
+                document.createElement("div");
+
+
+            symbol.className =
+                "tiny-symbol";
+
+
+            symbol.innerText =
+                symbols[
+                    Math.floor(
+                        Math.random()
+                        * symbols.length
+                    )
+                ];
+
+
+            /*
+                Everything stays comfortably
+                inside the card.
+            */
+
+            const x =
+                28 +
+                Math.random()
+                * (paper.clientWidth - 56);
+
+
+            const y =
+                35 +
+                Math.random()
+                * (paper.clientHeight - 100);
+
+
+            symbol.style.left =
+                x + "px";
+
+
+            symbol.style.top =
+                y + "px";
+
+
+            paper.appendChild(symbol);
+
+
+            setTimeout(() => {
+
+                symbol.remove();
+
+            }, 1450);
+
+
+        }, i * 90);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
